@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findChar(a, b) {
+        let scout = 0;
+        for (let i = 0; i < a.length; i++) {
+            if (b == a[i]) {
+                scout++;
+            }
+        }
+        alert(b + " xuat hien" + scout + " lan");
+    }
+
+    let charArr = ['a', 'b', 'c', 'd', 'x', 'a', 'c', 'b', 'w', 's', 'l', 'c', 'w', 'm', 'n', 'r', 'e', 's', 'a'];
+    let char = prompt("ki tu can tim");
+    findChar(charArr, char);
+
+</script>
+</body>
+</html>

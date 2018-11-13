@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMin(x) {
+        let min = x[0];
+        for (let i = 0; i < x.length; i++) {
+            if (x[i] < min) {
+                min = x[i];
+            }
+        }
+        alert("So nho nhat la " + min);
+    }
+
+    let arr = [];
+    let a = prompt("So A");
+    arr.push(a);
+    let b = prompt("So B");
+    arr.push(b);
+    let c = prompt("So C");
+    arr.push(c);
+    findMin(arr);
+
+</script>
+</body>
+</html>

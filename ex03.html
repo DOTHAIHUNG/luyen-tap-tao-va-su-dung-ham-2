@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function factorial(x) {
+        if (x === 0 || x === 1) return "Ket qua la 1";
+        if (x > 1) {
+            let result = x;
+            while (x > 1) {
+                x--;
+                result *= x;
+            }return result
+        }
+    }
+
+    let num = prompt("Nhap 1 so nguyen");
+    let res = factorial(num);
+    alert(res);
+
+</script>
+</body>
+</html>

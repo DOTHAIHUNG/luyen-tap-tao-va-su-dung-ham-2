@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function kiemtra(x) {
+        for (let i = 48; i <= 57; i++) {
+            if (x == String.fromCharCode(i)) return 1;
+        }
+        return 0;
+    }
+
+    let char = prompt();
+    if (kiemtra(char) == 1) alert("dang so");
+    else alert("khong phai so");
+
+
+</script>
+</body>
+</html>

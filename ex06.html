@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function nguyenAm(x) {
+        switch (x) {
+            case String.fromCharCode(65):
+            case String.fromCharCode(69):
+            case String.fromCharCode(73):
+            case String.fromCharCode(79):
+            case String.fromCharCode(85):
+            case String.fromCharCode(97):
+            case String.fromCharCode(101):
+            case String.fromCharCode(105):
+            case String.fromCharCode(111):
+            case String.fromCharCode(117):
+                alert("True");
+                break;
+            default:
+                alert("False");
+        }
+    }
+    let char = prompt();
+    nguyenAm(char);
+</script>
+</body>
+</html>
