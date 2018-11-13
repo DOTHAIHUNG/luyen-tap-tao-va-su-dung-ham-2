@@ -13,12 +13,15 @@
                 scout++;
             }
         }
-        alert(b + " xuat hien" + scout + " lan");
+
+        return scout;
     }
 
     let charArr = ['a', 'b', 'c', 'd', 'x', 'a', 'c', 'b', 'w', 's', 'l', 'c', 'w', 'm', 'n', 'r', 'e', 's', 'a'];
     let char = prompt("ki tu can tim");
-    findChar(charArr, char);
+    let result = findChar(charArr, char);
+    if (result !== 0) alert(`${char} xuat hien ${result} lan`);
+    else alert('-1');
 
 </script>
 </body>
